@@ -19,8 +19,8 @@
             <div class="card-body">
               <form action="simpan_produk.php" method="POST">
               <div class="form-group">
-                  <label>GAMBAR</label>
-                  <input type="file" name="gamar" id="filegambar">
+              <label for="filegambar">GAMBAR</label>
+              <input type="file" name="gambar" id="filegambar" class="form-control-file">
                 </div>
                 <div class="form-group">
                     <label>NAMA PRODUK</label>

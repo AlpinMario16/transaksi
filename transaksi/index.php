@@ -62,7 +62,7 @@
                       <td class="text-center">
                         <a href="edit_transaksi.php?id=<?php echo $row['id_transaksi'] ?>" class="btn btn-sm btn-primary">EDIT</a>
                         <a href="hapus_transaksi.php?id=<?php echo $row['id_transaksi'] ?>" class="btn btn-sm btn-danger">HAPUS</a>
-                        <a href="..\d_transaksi\index.php?id=<?php echo $row['id_transaksi'] ?>" class="btn btn-sm btn-warning">DETAIL</a>
+                        <a href="..\cetak\index.php?id=<?php echo $row['id_transaksi'] ?>" class="btn btn-sm btn-warning">CETAK</a>
                       </td>
                   </tr>
 
