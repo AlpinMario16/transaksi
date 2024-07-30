@@ -34,7 +34,7 @@
 
                 <div class="form-group">
                   <label>JUMLAH STOK</label>
-                  <input type="text" name="stok" placeholder="Masukkan jumlah Stok" class="form-control">
+                  <input type="number" name="stok" placeholder="Masukkan jumlah Stok" class="form-control">
                 </div>
 
                 <div class="form-group">

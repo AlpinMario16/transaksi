@@ -3,7 +3,7 @@
 //include koneksi database
 include('C:\laragon\www\transaksi\koneksi.php');
 
-//get data dari form
+
 
 $nama           = $_POST['nama'];
 $alamat         = $_POST['alamat'];
@@ -12,7 +12,7 @@ $status        = $_POST['status'];
 $email          = $_POST['email'];
 $no_tlp         = $_POST['no_tlp'];
 
-//query insert data ke dalam database
+
 $query = "INSERT INTO supplier ( nama, alamat, npwp, status, email, no_tlp) VALUES ( '$nama', '$alamat', '$npwp' ,'$status',              '$email', '$no_tlp')";
 
 //kondisi pengecekan apakah data berhasil dimasukkan atau tidak

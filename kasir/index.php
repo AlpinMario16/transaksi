@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="../css/jquery.dataTables.min.css">
     <title>Data Kasir</title>
     <style>
-        /* Custom styling for the card header */
+        
         .card-header {
-            font-size: 2rem; /* Larger font size for the header */
-            padding: 10px; /* Increased padding */
-            background-color: #343a40; /* Optional: dark background for better contrast */
-            color: white; /* Optional: white text color for better readability */
-            border-bottom: 2px solid #dee2e6; /* Optional: border at the bottom */
+            font-size: 2rem; 
+            padding: 10px; 
+            background-color: #343a40; 
+            color: white; 
+            border-bottom: 2px solid #dee2e6;
         }
 
-        /* Adjust the container to fit the new header size */
+       
         .container {
-            margin-top: 50px; /* Increased margin-top to fit larger header */
+            margin-top: 50px; 
         }
     </style>
 </head>

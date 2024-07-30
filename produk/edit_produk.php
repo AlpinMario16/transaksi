@@ -34,12 +34,12 @@
               <form action="update_produk.php" method="POST">
                 
               <div class="form-group">
-<p>Pilih File Gambar : <br/><input type='file' name='gambar' id='Filegambar'></p>
-</div>
+                <p>Pilih File Gambar : <br/><input type='file' name='gambar' id='Filegambar'></p>
+                <input type="hidden" name="id_produk" value="<?php echo $row['id_produk'] ?>">
+              </div>
                 <div class="form-group">
                   <label>NAMA PRODUK</label>
                   <input type="text" name="nama_produk" placeholder="Masukkan Nama produk" class="form-control">
-                  <input type="hidden" name="id_produk" value="<?php echo $row['id_produk'] ?>">
                 </div>
 
                 <div class="form-group">
@@ -49,7 +49,7 @@
 
                 <div class="form-group">
                   <label>JUMLAH STOK</label>
-                  <input type="text" name="stok" placeholder="Masukkan jumlah Stok" class="form-control">
+                  <input type="number" name="stok" placeholder="Masukkan jumlah Stok" class="form-control">
                 </div>
 
                 <div class="form-group">

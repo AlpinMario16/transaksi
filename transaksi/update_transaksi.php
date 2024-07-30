@@ -3,31 +3,31 @@
 // Include koneksi database
 include('C:\laragon\www\transaksi\koneksi.php');
 
-// Get data dari form
-$nominal           = $_POST['nominal'];
-$tanggal         = $_POST['tanggal'];
-$total         = $_POST['total'];
-$kembalian          = $_POST['kembalian'];
+$nominal    = $_POST['nominal'];
+$tanggal    = $_POST['tanggal'];
+$total      = $_POST['total'];
+$kembalian  = $_POST['kembalian'];
+$id_transaksi = $_POST['id_transaksi'];  
 
-// Query update data ke dalam database berdasarkan ID menggunakan prepared statements
-$query = "UPDATE transaksi SET nominal = ?, tanggal = ?, total = ?, kembalian = ?";
 
-// Mempersiapkan statement
+$query = "UPDATE transaksi SET nominal = ?, tanggal = ?, total = ?, kembalian = ? WHERE id_transaksi = ?";
+
+
 $stmt = $connection->prepare($query);
 
-// Mengikat parameter ke statement
-$stmt->bind_param("ssssssi", $nominal, $tanggal, $total, $kembalian);
+
+$stmt->bind_param("ssssi", $nominatanggal, $total, $kembalian, $id_transaksi);
 
 // Kondisi pengecekan apakah data berhasil diupdate atau tidak
 if($stmt->execute()) {
     // Redirect ke halaman index.php
-    header("location: index.php");
+    header("Location: index.php");
 } else {
     // Pesan error gagal update data
     echo "Data Gagal Diupdate!";
 }
 
-// Menutup statement dan koneksi
+
 $stmt->close();
 $connection->close();
 
